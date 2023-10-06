@@ -12,7 +12,7 @@ app.post('/formulario', (req, res) => {
 
     // Validación del formulario
     if (!id || !nombre || !apellido || !titulo_libro || !autor_libro || !editorial || !lanzamiento) {
-        return res.status(400).send('Por favor, complete todos los campos requeridos.');
+        return res.redirect('/error.html');
     }
 
     // Crear el contenido del archivo
