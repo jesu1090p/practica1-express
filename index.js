@@ -29,7 +29,7 @@ app.post('/formulario', (req, res)=>{
     /*if (!nombre || !apellido) {
         res.send('Faltan datos');
     }*/
-    if (!nombre || !apellido) return res.redirect('/error.html');   
+    if (!id || !nombre || !apellido || !titulo_libro || !autor_libro || !editorial || !lanzamiento) return res.redirect('/error.html');   
     res.send(`Hola ${nombre} ${apellido}`);
 });
 app.listen(port,()=>console.log("Servidor corriendo en el puerto " + port));
