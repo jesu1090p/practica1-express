@@ -7,9 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora&display=swap" rel="stylesheet">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <h3>
@@ -19,13 +17,13 @@
         Devoluci&oacute;n de Libros
     </h1>
     <form action="http://localhost:3005/formulario" method="post">
-        <input type="text" name="id" id="" placeholder="ID">
-        <input type="text" name="nombre" id="" placeholder="Ingrese su nombre">
-        <input type="text" name="apellido" id="" placeholder="Ingrese su(s) apellido(s)">
-        <input type="text" name="titulo_libro" id="" placeholder="T&iacute;tulo del libro a devolver">
-        <input type="text" name="autor_libro" id="" placeholder="Autor">
-        <input type="text" name="editorial" id="" placeholder="Editorial">
-        <input type="text" name="lanzamiento" id="" placeholder="A&ntilde;o de lanzamiento">
+        <input type="number" name="id" id="" placeholder="ID" required>
+        <input type="text" name="nombre" id="" placeholder="Ingrese su nombre" required>
+        <input type="text" name="apellido" id="" placeholder="Ingrese su(s) apellido(s)" required>
+        <input type="text" name="titulo_libro" id="" placeholder="T&iacute;tulo del libro a devolver" required>
+        <input type="text" name="autor_libro" id="" placeholder="Autor" required>
+        <input type="text" name="editorial" id="" placeholder="Editorial" required>
+        <input type="number" name="lanzamiento" id="" placeholder="A&ntilde;o de lanzamiento" required>
         <button type="submit">Enviar</button>
     </form>
 </body>
