@@ -1,0 +1,12 @@
+
+        Datos del estudiante:
+        ID: 1
+        Nombre: Kelly
+        Apellido(s): Rodriguez
+
+        Datos del libro:
+        Título: La Piedra Filosofal
+        Autor: JK Rowling
+        Editorial: Salvat
+        Año de lanzamiento: 2001
+    
